@@ -6,25 +6,9 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Nov 2016 07:14:59 +0800</pubDate>
-    <lastBuildDate>Sat, 05 Nov 2016 07:14:59 +0800</lastBuildDate>
+    <pubDate>Sat, 05 Nov 2016 07:18:10 +0800</pubDate>
+    <lastBuildDate>Sat, 05 Nov 2016 07:18:10 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
-    
-      <item>
-        <title>My first blog</title>
-        <description>&lt;h1 id=&quot;x00&quot;&gt;0x00&lt;/h1&gt;
-&lt;p&gt;完全不知道写什么啊&lt;/p&gt;
-</description>
-        <pubDate>Fri, 04 Nov 2016 00:00:00 +0800</pubDate>
-        <link>http://yourdomain.com/who/knows/2016/11/04/my-first-blog.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/who/knows/2016/11/04/my-first-blog.html</guid>
-        
-        
-        <category>who</category>
-        
-        <category>knows</category>
-        
-      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
