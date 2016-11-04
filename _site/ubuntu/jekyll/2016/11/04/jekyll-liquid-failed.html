@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My first blog</title>
-  <meta name="description" content="0x00完全不知道写什么啊">
+  <title>jekyll-liquid-failed</title>
+  <meta name="description" content="今天心血来草想写个博客的时候突然发现前不久用github+jekyll搭建的博客炸了打开index.html页面显示是这样的— 　　layout: default 　　title: myBlog 　　— 　　{{ page.title }}">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/who/knows/2016/11/04/my-first-blog.html">
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
+  <link rel="stylesheet" href="//css/main.css">
+  <link rel="canonical" href="http://yourdomain.com//ubuntu/jekyll/2016/11/04/jekyll-liquid-failed.html">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com//feed.xml">
 </head>
 
 
@@ -21,7 +21,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Your awesome title</a>
+    <a class="site-title" href="//">Your awesome title</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -35,9 +35,13 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="//about/">About</a>
           
         
+          
+        
+          
+          <a class="page-link" href="//">myBlog</a>
           
         
           
@@ -55,13 +59,49 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">My first blog</h1>
+    <h1 class="post-title" itemprop="name headline">jekyll-liquid-failed</h1>
     <p class="post-meta"><time datetime="2016-11-04T00:00:00+08:00" itemprop="datePublished">Nov 4, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h1 id="x00">0x00</h1>
-<p>完全不知道写什么啊</p>
+    <p>今天心血来草想写个博客的时候突然发现前不久用github+jekyll搭建的博客炸了
+打开index.html页面显示是这样的</p>
+
+<p>— 　　layout: default 　　title: myBlog 　　— 　　
+{{ page.title }}</p>
+
+<p>　　
+new article</p>
+
+<p>　　
+　　　　{% for post in site.posts %} 　　　　　　
+{{ post.date | date_to_string }} {{ post.title }}
+　　　　{% endfor %} 　</p>
+
+<p>然后一晚上就在各种谷歌，查看各种解决方案还是一个都没用
+最后快放弃的时候突然发现我的index.html里的YAML头信息是这样写的</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="o">---</span>
+    <span class="ss">layout: </span><span class="n">post</span>
+    <span class="ss">title:  </span><span class="s2">"my first blog"</span>
+    <span class="ss">date:   </span><span class="mi">2016</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mo">04</span>
+    <span class="ss">categories: </span><span class="n">jekyll</span>
+    <span class="o">---</span></code></pre></figure>
+
+<p>本着不浪费的原则我把他缩进缩回去了也就是这样</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<span class="ss">layout: </span><span class="n">post</span>
+<span class="ss">title:  </span><span class="s2">"my first blog"</span>
+<span class="ss">date:   </span><span class="mi">2016</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mo">04</span>
+<span class="ss">categories: </span><span class="n">jekyll</span>
+<span class="o">---</span></code></pre></figure>
+
+<p>然后刷新一下了index.html页面的时候发现页面变成了这样
+(http://yourdomain.com/image/Screenshot from 2016-11-05 07-57-47.png)
+好了。。。竟然好了我×××
+冷静下来总结一下原因可能是我用atom打开index.html页面的时候它自己给我加上了空格
+或者我自己不知道什么时候加上去的=!=</p>
 
   </div>
 

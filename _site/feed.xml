@@ -4,11 +4,63 @@
     <title>Your awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Nov 2016 08:04:59 +0800</pubDate>
-    <lastBuildDate>Sat, 05 Nov 2016 08:04:59 +0800</lastBuildDate>
+    <link>http://yourdomain.com//</link>
+    <atom:link href="http://yourdomain.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Nov 2016 00:42:12 +0800</pubDate>
+    <lastBuildDate>Sat, 05 Nov 2016 00:42:12 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>jekyll-liquid-failed</title>
+        <description>&lt;p&gt;今天心血来草想写个博客的时候突然发现前不久用github+jekyll搭建的博客炸了
+打开index.html页面显示是这样的&lt;/p&gt;
+
+&lt;p&gt;— 　　layout: default 　　title: myBlog 　　— 　　
+{{ page.title }}&lt;/p&gt;
+
+&lt;p&gt;　　
+new article&lt;/p&gt;
+
+&lt;p&gt;　　
+　　　　{% for post in site.posts %} 　　　　　　
+{{ post.date | date_to_string }} {{ post.title }}
+　　　　{% endfor %} 　&lt;/p&gt;
+
+&lt;p&gt;然后一晚上就在各种谷歌，查看各种解决方案还是一个都没用
+最后快放弃的时候突然发现我的index.html里的YAML头信息是这样写的&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;    &lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;layout: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;title:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;my first blog&quot;&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;date:   &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2016&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;04&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;categories: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;本着不浪费的原则我把他缩进缩回去了也就是这样&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;layout: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;title:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;my first blog&quot;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;date:   &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2016&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;04&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;categories: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;然后刷新一下了index.html页面的时候发现页面变成了这样
+(http://yourdomain.com/image/Screenshot from 2016-11-05 07-57-47.png)
+好了。。。竟然好了我×××
+冷静下来总结一下原因可能是我用atom打开index.html页面的时候它自己给我加上了空格
+或者我自己不知道什么时候加上去的=!=&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Nov 2016 00:00:00 +0800</pubDate>
+        <link>http://yourdomain.com//ubuntu/jekyll/2016/11/04/jekyll-liquid-failed.html</link>
+        <guid isPermaLink="true">http://yourdomain.com//ubuntu/jekyll/2016/11/04/jekyll-liquid-failed.html</guid>
+        
+        
+        <category>ubuntu</category>
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -28,8 +80,8 @@
 
 </description>
         <pubDate>Wed, 02 Nov 2016 22:18:00 +0800</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/11/02/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/11/02/welcome-to-jekyll.html</guid>
+        <link>http://yourdomain.com//jekyll/update/2016/11/02/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com//jekyll/update/2016/11/02/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>

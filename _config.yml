@@ -18,5 +18,6 @@ twitter_username: jekyllrb
 github_username:  jekyll
 encoding: utf-8
 paginate: 5
+gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
