@@ -81,12 +81,12 @@ new article</p>
 <p>然后一晚上就在各种谷歌，查看各种解决方案还是一个都没用
 最后快放弃的时候突然发现我的index.html里的YAML头信息是这样写的</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="o">---</span>
-    <span class="ss">layout: </span><span class="n">post</span>
-    <span class="ss">title:  </span><span class="s2">"my first blog"</span>
-    <span class="ss">date:   </span><span class="mi">2016</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mo">04</span>
-    <span class="ss">categories: </span><span class="n">jekyll</span>
-    <span class="o">---</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-jekyll" data-lang="jekyll">    ---
+    layout: post
+    title:  "my first blog"
+    date:   2016-11-04
+    categories: jekyll
+    ---</code></pre></figure>
 
 <p>本着不浪费的原则我把他缩进缩回去了也就是这样</p>
 
@@ -98,7 +98,7 @@ new article</p>
 <span class="o">---</span></code></pre></figure>
 
 <p>然后刷新一下了index.html页面的时候发现页面变成了这样
-(http://yourdomain.com/image/Screenshot from 2016-11-05 07-57-47.png)
+<img src="http://yourdomain.com/image/Screenshot from 2016-11-05 07-57-47.png" alt="屏幕截图" />
 好了。。。竟然好了我×××
 冷静下来总结一下原因可能是我用atom打开index.html页面的时候它自己给我加上了空格
 或者我自己不知道什么时候加上去的=!=</p>
