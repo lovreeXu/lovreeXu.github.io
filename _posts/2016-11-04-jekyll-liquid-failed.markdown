@@ -38,7 +38,7 @@ categories: jekyll
 ---
 {% endhighlight %}
 然后刷新一下了index.html页面的时候发现页面变成了这样
-![屏幕截图]({{ site.url }}/image/Screenshot from 2016-11-05 07-57-47.png)
+![屏幕截图]({{ site.url }}/image/Screenshot1.png)
 好了。。。竟然好了我×××
 冷静下来总结一下原因可能是我用atom打开index.html页面的时候它自己给我加上了空格
 或者我自己不知道什么时候加上去的=!=
