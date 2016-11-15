@@ -1,2 +1,3 @@
 # lovreeXu.github.io
-blog
+lovreexu's blog
+
